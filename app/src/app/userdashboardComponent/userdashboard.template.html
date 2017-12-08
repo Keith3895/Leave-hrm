@@ -1,0 +1,231 @@
+<div id="angularRoot">
+  <div fxLayout="column" fxShow="true" fxHide="false" id="afb90de7-6aaf-3714-4b14-e1368fc66466">
+    <div fxLayout="row" style="background-color: rebeccapurple;position: fixed;top: 0;width: 100%;height: 35px;" fxShow="true" fxHide="false" id="5ea6d13a-5590-29d0-6def-c299118fce87">
+      <div fxLayout="column" fxShow="true" fxHide="false" id="1951544a-75eb-cf2c-1ee3-00823c28db42">
+        <img imgSrc="Android/logo.png" alt="header image" style="width:100px;" id="5d32c3e1-ae0c-f31f-c488-028d94e379fc">
+      </div>
+    </div>
+    <div fxLayout="column" style="margin: 40px 0px;height: calc( 100vh - 80px);padding: 40px;padding-bottom: 20px;" fxShow="true" fxHide="false" id="d74b80f5-2d33-f39e-9a0e-5b8d4ea528bd">
+      <div fxLayout="row" fxLayoutGap="10px" fxShow="true" fxHide="false" id="185f74d9-a309-124d-6994-52239b1e59ed">
+        <div fxLayout="column" fxFlex="33" fxShow="true" fxHide="false" id="f614d622-d385-0f33-ac98-6aaa3b3097de">
+          <div><span style="font-weight: bold;">Name</span> {{applyLeaveDetails.firstName}} {{applyLeaveDetails[&apos;lastName&apos;]}}</div>
+        </div>
+        <div fxLayout="column" fxFlex="33" fxShow="true" fxHide="false" id="3b607b73-dddd-ceb7-8ae2-0abbda2f1e2c">
+          <div style="text-align: center;"><span style="font-weight: bold;">Role</span> {{applyLeaveDetails.Designation}} </div>
+        </div>
+        <div fxLayout="column" fxFlex="33" fxShow="true" fxHide="false" id="a338f7de-c206-9148-dbc5-f3746f714821">
+          <div (click)="logoutUser()" style="text-align: right;color: #327ca2;cursor: pointer;">Logout</div>
+        </div>
+      </div>
+      <div class="refreshIcon">
+        <div matTooltip="reload" (click)="reloadData()">
+          <mat-icon>refresh</mat-icon>
+        </div>
+      </div>
+      <mat-tab-group id="ce05b5bd-0314-f8ec-fec9-0f6f44ca0992" (selectedTabChange)="getTabChange($event)">
+        <mat-tab label="Profile Details" id="e53bb219-5bf9-cd80-2bd9-fad65ae99881">
+          <div fxLayout="row" style="padding: 8px;" class="userDetails" fxShow="true" fxHide="false" id="e310cd29-27e9-eb25-38a1-9438f48daade" fxLayout.sm="column" fxLayout.xs="column">
+            <div fxLayout="column" fxFlex="50" fxShow="true" fxHide="false" id="1390432a-ff6d-5de7-2639-9a62fbdd31cf">
+              <div fxLayout="column" fxShow="true" fxHide="false" id="e7f1e336-45cd-4212-3f19-6c72509ce33f">
+                <div class="infoDetails">
+                  <div class="label">First Name</div><span>{{applyLeaveDetails.firstName}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="bb0d06bd-37b0-a2c1-637a-fdc0444f4805">
+                <div class="infoDetails">
+                  <div class="label">Last Name</div><span>{{applyLeaveDetails[&apos;lastName&apos;]}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="9f449851-1f0f-2735-6cfe-1f8930513d10">
+                <div class="infoDetails">
+                  <div class="label">Email Id</div><span>{{applyLeaveDetails[&apos;email id&apos;]}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="52b7fdbc-0cd1-acee-234f-21705feb92f5">
+                <div class="infoDetails">
+                  <div class="label">Employee Id</div><span>{{applyLeaveDetails[&apos;employee id&apos;]}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="113be62a-274e-ba7a-11bf-c45fe989fced">
+                <div class="infoDetails">
+                  <div class="label">Manager Id</div><span>{{applyLeaveDetails[&apos;manager&apos;]}}</span>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column" fxFlex="50" fxShow="true" fxHide="false" id="508cf319-83c1-0c76-0b59-de64fac7db6b">
+              <div fxLayout="column" fxShow="true" fxHide="false" id="c3b8ab5f-55f8-421d-9462-faef76de4e58">
+                <div class="infoDetails">
+                  <div class="label">Gender</div><span>{{applyLeaveDetails[&apos;gender&apos;]}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="4faea25d-7d50-4b3e-52be-85231e5c7669">
+                <div class="infoDetails">
+                  <div class="label">Location</div><span>{{applyLeaveDetails[&apos;Location&apos;]}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="74edebb6-596c-7fcd-eb5e-acd41c5aa3df">
+                <div class="infoDetails">
+                  <div class="label">Is On Propagation</div><span>{{applyLeaveDetails[&apos;isOnPropation&apos;]}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="f6c0a9ec-7141-02e8-ff5e-55f54b6ba420">
+                <div class="infoDetails">
+                  <div class="label">Date Of Birth</div><span>{{applyLeaveDetails[&apos;dob&apos;]}}</span>
+                </div>
+              </div>
+              <div fxLayout="column" fxShow="true" fxHide="false" id="3cff570d-294d-e5dc-b209-dde12da39b7e">
+                <div class="infoDetails">
+                  <div class="label">Date Of Joining</div><span>{{applyLeaveDetails[&apos;doj&apos;]}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Apply Leave" id="8146e9dc-039e-0a7b-fdd8-80f32be6593d">
+          <form id="7eb4f7ee-9ab8-22a7-6d39-62b0c823a8ba" #leaveForm="ngForm">
+            <div fxLayout="row" style="padding: 8px;" fxShow="true" fxHide="false" id="9549d5ca-72ce-b7a8-656f-cdffeed87c6c" fxLayout.sm="column" fxLayout.xs="column">
+              <div fxLayout="column" fxFlex="50" fxShow="true" fxHide="false" id="2c2a35c4-200c-36ce-0263-c9a205038b3c">
+                <div fxLayout="column" fxShow="true" fxHide="false" id="021390e3-461b-8175-1b8d-a0f1e550f0d0">
+                  <div class="infoDetails">
+                    <div class="label">Already Taken</div>
+                    <span>
+    <mat-checkbox name="alreadyTaken" [(ngModel)]="isAlreadyTaken" (change)="changeMinDate()"></mat-checkbox>
+  </span>
+                  </div>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="13df9d43-c9ab-0e94-ef12-170dfa7b43ce">
+                  <div class="infoDetails">
+                    <div class="label" style="position: relative;top: 50px;">Choose Date</div>
+                    <span>
+    <mat-form-field>
+    <input [min]="minDate" matInput="" [matDatepicker]="picker" placeholder="From date" name="fromleavedate" [(ngModel)]="applyLeaveDetails[&apos;fromdateLeave&apos;]" required>
+  	<mat-datepicker-toggle matSuffix="" [for]="picker"></mat-datepicker-toggle>
+  	<mat-datepicker #picker="" [touchUi]="true"></mat-datepicker>
+    </mat-form-field>
+  </span>
+                    <span style="margin-left: 15px;">
+    <mat-radio-group>
+        <mat-radio-button value="First Half" name="fromFirstLeaveHalf">First Half</mat-radio-button>
+        <mat-radio-button style="margin-top: 3px" value="Second Half" name="fromSecondLeaveHalf">Second Half</mat-radio-button>
+    </mat-radio-group>
+  </span>
+                  </div>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="4d1056c4-8a9f-fca6-eaa5-49e70f7372d6">
+                  <div class="infoDetails">
+                    <div class="label"></div>
+                    <span>
+	<mat-form-field>
+    	<input [min]="minDate" matInput="" [matDatepicker]="picker2" placeholder="To date" name="toleavedate" [(ngModel)]="applyLeaveDetails[&apos;todateLeave&apos;]" required>
+  		<mat-datepicker-toggle matSuffix="" [for]="picker2"></mat-datepicker-toggle>
+  		<mat-datepicker #picker2="" [touchUi]="true"></mat-datepicker>
+    </mat-form-field>
+  </span>
+                    <span style="margin-left: 15px;">
+    <mat-radio-group>
+        <mat-radio-button value="First Half" name="toFirstLeaveHalf">First Half</mat-radio-button>
+        <mat-radio-button style="margin-top: 3px" value="Second Half" name="toSecondLeaveHalf">Second Half</mat-radio-button>
+    </mat-radio-group>
+  </span>
+                  </div>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="50f7c9e3-337f-5f9a-7ef5-af63286a1d93">
+                  <div class="infoDetails">
+                    <div class="label" style="position: relative;top: 22px;">Select Leave Type</div>
+                    <span>
+    <mat-form-field>
+    	<mat-select placeholder="Select Type" name="selectedLeaveType" [(ngModel)]="applyLeaveDetails[&apos;selectLeaveType&apos;]" required>
+      		<mat-option *ngFor="let data of leaveType" [value]="data">{{data}}</mat-option>
+    	</mat-select>
+  	</mat-form-field>
+  </span>
+                  </div>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="24b0f9ef-1a94-06cc-ed81-97d145c8e4bb" *ngIf="showMessageBox">
+                  <div class="infoDetails" style="margin: 0px 0px !important;">
+                    <div class="label"></div>
+                    <span>
+    <p class="pending">Total Days : {{getRemainingCount}}</p>
+  </span>
+                  </div>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="f4a65e6e-0b17-7c40-99f1-b7a829810c94">
+                  <div class="infoDetails">
+                    <div class="label" style="position: relative;top: 30px;">Leave Reason</div>
+                    <span>
+    <mat-form-field>
+    	<textarea matInput="" placeholder="Textarea" name="reasonDetails" [(ngModel)]="applyLeaveDetails[&apos;reasonForLeave&apos;]" required></textarea>
+  	</mat-form-field>
+  </span>
+                  </div>
+                </div>
+              </div>
+              <div fxLayout="column" class="userDetails" fxFlex="50" fxShow="true" fxHide="false" id="42ea5dc3-33ee-5df2-f735-429cd0c10c32">
+                <div fxLayout="column" fxShow="true" fxHide="false" id="f0c959c9-a8be-b05f-a5b5-ab0d7c70fe51">
+                  <div class="infoDetails">
+                    <div class="label">Casual Leave Count</div><span>{{applyLeaveDetails[&apos;casualLeaveCount&apos;] - applyLeaveDetails[&apos;casualLeaveTaken&apos;]}}</span>
+                  </div>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="1821c551-f01d-33f2-1c72-a2ab82b12d7a">
+                  <div class="infoDetails">
+                    <div class="label">Priviledged Leave Count</div><span>{{applyLeaveDetails[&apos;priviledgedLeaveCount&apos;] - applyLeaveDetails[&apos;priviledgedLeaveTaken&apos;]}}</span>
+                  </div>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="27a85789-c093-4f57-064e-ae81ba73b783">
+                  <div class="infoDetails">
+                    <div class="label">Special Leave Count</div><span>{{applyLeaveDetails[&apos;specialLeaveCount&apos;] - applyLeaveDetails[&apos;specialLeaveTaken&apos;]}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column" fxShow="true" fxHide="false" id="dfe0c531-b68a-90e5-7f24-ebd40ef8b568">
+              <div fxLayout="row" fxShow="true" fxHide="false" id="9746914e-f44f-f2e6-3985-a465577bd248" *ngIf="showMessageBox">
+                <p id="438f5e08-1cd9-532a-6c61-faff55463498" style="width:100%" class="messageBox">{{applyLeaveDetails[&apos;selectLeaveType&apos;]}} remaining {{getRemainingCount}}</p>
+              </div>
+              <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center" fxShow="true" fxHide="false" id="431717bb-8ef2-ad8e-ac59-cd3d14120d85">
+                <div fxLayout="column" fxShow="true" fxHide="false" id="b2077e82-f6d0-f0b5-2a6f-483475badbc2">
+                  <button mat-raised-button="" id="d216229d-41e0-b889-9f6c-03287404c09d" [disabled]="leaveForm.form.invalid || !disableApplyBtn" color="primary" (click)="applyLeave(leaveForm)">Apply Leave</button>
+                </div>
+                <div fxLayout="column" fxShow="true" fxHide="false" id="25b5b0d7-844d-d5c3-8c98-b3825edec8cc">
+                  <button mat-raised-button="" id="cdd2500c-155b-5fa2-5ad7-97375993e2f7" type="reset" color="primary" (click)="resetFormValues(leaveForm);">Clear</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </mat-tab>
+        <mat-tab label="Leave History" id="8005b0af-e744-c33e-bcff-0257a55776db">
+          <div *ngIf="leaveHistory[&apos;length&apos;]" id="leaveHistory">
+            <table>
+              <tr>
+                <th>No</th>
+                <th>Email Id</th>
+                <th>Manager Id</th>
+                <th>From Date</th>
+                <th>To Date</th>
+                <th>Leave Type</th>
+                <th>Reason</th>
+                <th>Status</th>
+                <th>Comments</th>
+              </tr>
+              <tr *ngFor="let data of leaveHistory;let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{data[&apos;email id&apos;]}}</td>
+                <td>{{data[&apos;manager&apos;]}}</td>
+                <td>{{data[&apos;fromdateLeave&apos;]}}</td>
+                <td>{{data[&apos;todateLeave&apos;]}}</td>
+                <td>{{data[&apos;selectLeaveType&apos;]}}</td>
+                <td>{{data[&apos;reasonForLeave&apos;]}}</td>
+                <td [ngClass]="{&apos;pending&apos; : data[&apos;status&apos;] == &apos;pending&apos;, &apos;approved&apos;: data[&apos;status&apos;] == &apos;Approved&apos;, &apos;rejected&apos;: data[&apos;status&apos;] == &apos;rejected&apos;}">{{data[&apos;status&apos;]}}</td>
+                <td>{{data[&apos;comments&apos;]}}</td>
+              </tr>
+            </table>
+          </div>
+          <div *ngIf="!leaveHistory[&apos;length&apos;]" class="messageBox">No Leave History Available</div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+    <div fxLayout="row" style="position: fixed;bottom: 0;background-color: rebeccapurple;width:100%;height: 35px;" fxShow="true" fxHide="false" id="5e9b8d1f-1a81-67da-503b-d73bd3b57566">
+      <p id="02e04c1f-6964-250d-0332-cf92a330111a" style="width:100%;text-align:center;color: white;font-size: 12px;margin:0;position: relative;top: 6px;">All content &#xA9; Copyright 2017 Neutrinos private limited</p>
+    </div>
+  </div>
+</div>

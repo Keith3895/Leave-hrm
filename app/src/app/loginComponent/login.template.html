@@ -1,0 +1,32 @@
+<div id="angularRoot">
+  <div fxLayout="column" class="loginContainer" fxLayoutGap="10px" fxShow="true" fxHide="false" id="15015c19-77d3-449c-4b17-74d2a4061759">
+    <div fxLayout="column" fxLayoutAlign="center" fxShow="true" fxHide="false" id="36b46837-4e12-586c-63f7-2814c6338454">
+      <img imgSrc="Android/logo.png" alt="logo" id="294ad023-a5b5-931d-f04a-c1f9cbe003b2">
+    </div>
+    <div fxLayout="column" class="loginFormContainer" fxLayoutAlign="center" fxShow="true" fxHide="false" id="72d0a0f0-3861-27db-2bf6-85555cd10064">
+      <div fxLayout="row" fxLayoutAlign="center" fxShow="true" fxHide="false" id="9e49b471-272f-52d8-cd48-9ac92283dfc5">
+        <h4 id="121a677a-4590-d3da-db91-787e0c2eda01">Neutrinos HRM</h4>
+      </div>
+      <form id="47d0e642-17c5-97b7-6580-24b7bf581dad" #loginForm="ngForm">
+        <div fxLayout="row" fxLayoutAlign="center" fxShow="true" fxHide="false" id="99ef274d-96e3-3149-c6d8-81a189d0f287">
+          <mat-form-field>
+            <input matInput="" [(ngModel)]="loginDetails.username" name="username" type="email" placeholder="Enter your username" required id="d0cd3dc8-fd71-957b-dd9d-b94f44092f91">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" fxShow="true" fxHide="false" id="ee8b7496-937e-e782-0dae-482df38bc5f7">
+          <mat-form-field>
+            <input matInput="" [(ngModel)]="loginDetails.password" name="password" type="password" placeholder="Enter your password" required id="92f73522-6661-3671-6dcb-82fc7f344180">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center" fxShow="true" fxHide="false" id="24a9b751-73a2-e50e-452f-ec02ed1b2942">
+          <div fxLayout="column" fxLayoutAlign="center" fxShow="true" fxHide="false" id="3fe199a4-855a-6195-577c-ba03e9c71826">
+            <button mat-raised-button="" id="75d6dffa-dee9-798b-db6e-ff10c1c44141" [disabled]="loginForm.form.invalid" color="primary" (click)="submitLogin()">Login</button>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="center" fxShow="true" fxHide="false" id="d7bd0da1-9c33-98f5-5fa9-235e111ed19d">
+            <button mat-raised-button="" id="09fa5bf7-2580-b8f3-7c6a-3a1ec809492c" type="reset" color="primary">Clear</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

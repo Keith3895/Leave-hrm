@@ -1,0 +1,13 @@
+{
+    "appPageId": "b08f67da-4680-bdc3-4188-5ff7600cd16b",
+    "appPageName": "userDashboard",
+    "componentName": "userdashboardComponent",
+    "selectorName": "bh-userdashboard",
+    "htmlFileName": "userdashboard.template.html",
+    "tsFileName": "userdashboard.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

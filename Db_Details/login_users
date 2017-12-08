@@ -1,0 +1,68 @@
+{
+    "_id" : ObjectId("5a263effaad6f30e9eb7e997"),
+    "userKey" : "bhiveadmin@neutrinos.co",
+    "firstName" : "Bhive",
+    "lastName" : "Admin",
+    "username" : "bhiveadmin@neutrinos.co",
+    "displayName" : "Bhive Admin",
+    "groupList" : [ 
+        "NEUTRINOS_ADMIN", 
+        "NEUTRINOS_USER"
+    ],
+    "passwordSalt" : "cbdfc5a4-4628-42fd-9f7f-90a61972d64a",
+    "passwordHash" : "d96ee5aeb3caa224bd7bd1a6983a3ea7eaa36ab6c36a91a1799836227ef2718b5e16240531fab3ba5768b8618cb8b23f337a7ef9a6b54bcdfbdea55ad900d1a2",
+    "createdAt" : ISODate("2017-12-05T06:38:55.880Z")
+}
+
+// user  
+
+
+{
+    "_id" : ObjectId("5a2649afaad6f30e9eb7e9bc"),
+    "firstName" : "Sonu",
+    "lastName" : " ",
+    "username" : "Sonu@neutrinos.co",
+    "userKey" : "Sonu@neutrinos.co",
+    "displayName" : "Sonu",
+    "groupList" : [ 
+        "USER_EMPLOYEE", 
+        "NEUTRINOS_USER"
+    ],
+    "passwordSalt" : "57bb2477-e35a-44f6-a50e-af4ec48d2407",
+    "passwordHash" : "70bba23017ed7b328daa96b051d481b79630a000f4b5110a55cb08a534e9bb4683381a4549d9c173610fcb146b253b00fcc987cc56f68fa73d6ed978647fc2a5",
+    "createdAt" : ISODate("2017-12-05T07:24:31.475Z")
+}
+
+
+{
+    "_id" : ObjectId("5a2649dfaad6f30e9eb7e9be"),
+    "firstName" : "bindu",
+    "lastName" : " ",
+    "username" : "bindu@neutrinos.co",
+    "userKey" : "bindu@neutrinos.co",
+    "displayName" : "Bindu",
+    "groupList" : [ 
+        "USER_HR", 
+        "NEUTRINOS_USER"
+    ],
+    "passwordSalt" : "89bd4c25-1c6b-4345-8808-c0c28315cc20",
+    "passwordHash" : "36ecdabcb8df6e8e84baba06b7eff30b378ebeb4b2fc5e38aba22323dbeeeb18a0250109588a880764c86e153e640e9c718f343b5b987cb7f57c610f252a8b71",
+    "createdAt" : ISODate("2017-12-05T07:25:19.213Z")
+}
+
+{
+    "_id" : ObjectId("5a264a97aad6f30e9eb7e9c6"),
+    "firstName" : "Nisarg",
+    "lastName" : "Tuli",
+    "username" : "nisarg@neutrinos.co",
+    "userKey" : "nisarg@neutrinos.co",
+    "displayName" : "Nisarg",
+    "groupList" : [ 
+        "USER_MANAGER", 
+        "NEUTRINOS_USER"
+    ],
+    "passwordSalt" : "e18202d6-ad66-46de-963a-9009e2b56b35",
+    "passwordHash" : "7acd2b520f4c8bf6188417f08048af41c91dc6d67d8c9b5dab4791851c75d735fdc02d0f5940f004f36c1dbc268c9635c62e159caf48c5f4ca8a78482efc2489",
+    "createdAt" : ISODate("2017-12-05T07:28:23.439Z")
+}
+

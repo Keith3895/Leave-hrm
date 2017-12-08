@@ -1,0 +1,13 @@
+{
+    "appPageId": "912e2dc9-d01c-20bc-11e1-192c387d11fb",
+    "appPageName": "login",
+    "componentName": "loginComponent",
+    "selectorName": "bh-login",
+    "htmlFileName": "login.template.html",
+    "tsFileName": "login.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

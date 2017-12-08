@@ -1,0 +1,17 @@
+{
+    "912e2dc9-d01c-20bc-11e1-192c387d11fb": {
+        "appPageName": "login",
+        "componentName": "loginComponent",
+        "isEntry": false
+    },
+    "b08f67da-4680-bdc3-4188-5ff7600cd16b": {
+        "appPageName": "userDashboard",
+        "componentName": "userdashboardComponent",
+        "isEntry": false
+    },
+    "3021d9b9-aec0-cf32-ca9b-a1045bae47a0": {
+        "appPageName": "managerDashboard",
+        "componentName": "managerdashboardComponent",
+        "isEntry": false
+    }
+}

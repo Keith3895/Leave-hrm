@@ -1,0 +1,13 @@
+{
+    "appPageId": "3021d9b9-aec0-cf32-ca9b-a1045bae47a0",
+    "appPageName": "managerDashboard",
+    "componentName": "managerdashboardComponent",
+    "selectorName": "bh-managerdashboard",
+    "htmlFileName": "managerdashboard.template.html",
+    "tsFileName": "managerdashboard.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

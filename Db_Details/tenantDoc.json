@@ -1,0 +1,46 @@
+{
+    "_id" : ObjectId("5a02fa7293e319904f826e13"),
+    "tenantName" : "neutrinos",
+    "datasource" : [ 
+        {
+            "name" : "hrm-rt",
+            "type" : "mongodb",
+            "url" : "mongodb://localhost:27017/hrm-rt"
+        }
+    ],
+    "apps" : {
+        "lm" : {
+            "namespace" : "com.jatahworx.neutrinos.lm",
+            "authentication" : {
+                "strategy" : "basicAuth",
+                "username" : "bhive-art-proxyuser",
+                "password" : "artproxy@13579!#%&()"
+            }
+        },
+        "leavemanagement" : {
+            "namespace" : "com.jatahworx.leavemanagement.leavemanagement",
+            "appname" : "leavemanagement",
+            "authentication" : {
+                "strategy" : "localAuth",
+                "default_datasource" : "hrm-rt",
+                "reset" : {
+                    "options" : {
+                        "from" : "gnanasekaran.perumal@neutrinos.co",
+                        "subject" : "Password Reset",
+                        "text" : "This is test with password %%token%%",
+                        "html" : ""
+                    }
+                },
+                "change" : {
+                    "options" : {
+                        "from" : "gnanasekaran.perumal@neutrinos.co",
+                        "subject" : "Password Change",
+                        "text" : "This is test with password %%token%%",
+                        "html" : "pfarm"
+                    }
+                },
+                "secretKey" : "secret"
+            }
+        }
+    }
+}
